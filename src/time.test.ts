@@ -38,7 +38,7 @@ const dataToTest = [
 ]
 describe('Testing time functions', () => {
   dataToTest.forEach(data => {
-    test('it should return correct conversion of decimal hours to min and sec', () => {
+    test(`it should return correct conversion of decimal hours to min and sec for ${data.arg0}`, () => {
       expect(hoursToMinSec(data.arg0, data.arg1)).toStrictEqual(data.expect)
     })
   })
