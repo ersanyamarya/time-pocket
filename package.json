@@ -1,0 +1,61 @@
+{
+  "name": "time-pocket",
+  "version": "1.0.0",
+  "description": "Simple time utilities",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "develop": "nodemon --ext ts,json --watch src --exec node --inspect=0.0.0.0:9229 -r ts-node/register src/index.ts",
+    "lint-fix": "eslint --ext ts --fix ./src",
+    "lint": "eslint --ext ts ./src",
+    "test": "NODE_ENV=test jest --config=./jest.config.js --runInBand --no-cache"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.9",
+    "@types/node": "^14.6.0",
+    "@typescript-eslint/eslint-plugin": "^3.9.1",
+    "@typescript-eslint/parser": "^3.9.1",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
+    "jest": "^26.2.2",
+    "jest-junit": "^11.1.0",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "lint-staged": {
+    "*.ts": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ersanyamarya/time-pocket.git"
+  },
+  "keywords": [
+    "time",
+    "utility",
+    "hours",
+    "min",
+    "sec"
+  ],
+  "author": "Sanyam Arya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ersanyamarya/time-pocket/issues"
+  },
+  "homepage": "https://github.com/ersanyamarya/time-pocket#readme"
+}
