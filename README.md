@@ -6,10 +6,10 @@
 
 <p align="center">
 <a href="https://www.codacy.com/manual/ersanyamarya/time-pocket?utm_source=github.com&utm_medium=referral&utm_content=ersanyamarya/time-pocket&utm_campaign=Badge_Grade"> <img src ="https://img.shields.io/codacy/grade/a003dbe0f9a346348a10f4a1836e9499/master?logo=codacy&style=for-the-badge" alt="Codacy Badge"> </a>
-<a href="https://www.codacy.com/manual/ersanyamarya/time-pocket?utm_source=github.com&utm_medium=referral&utm_content=ersanyamarya/time-pocket&utm_campaign=Badge_Grade"> <img src ="https://img.shields.io/github/repo-size/ersanyamarya/time-pocket?logo=github&style=for-the-badge" alt="Codacy Badge"> </a>
-<a href="https://www.codacy.com/manual/ersanyamarya/time-pocket?utm_source=github.com&utm_medium=referral&utm_content=ersanyamarya/time-pocket&utm_campaign=Badge_Grade"> <img src ="https://img.shields.io/github/license/ersanyamarya/time-pocket?style=for-the-badge" alt="Codacy Badge"> </a>
-<a href="https://www.codacy.com/manual/ersanyamarya/time-pocket?utm_source=github.com&utm_medium=referral&utm_content=ersanyamarya/time-pocket&utm_campaign=Badge_Grade"> <img src ="https://img.shields.io/github/workflow/status/ersanyamarya/time-pocket/Integrate?label=Integrate&logo=github&style=for-the-badge" alt="Codacy Badge"> </a>
-
+<a href="https://github.com/ersanyamarya/time-pocket/actions"> <img src ="https://img.shields.io/github/workflow/status/ersanyamarya/time-pocket/Integrate?label=Integrate&logo=github&style=for-the-badge" alt="Integrate Pipeline Badge"> </a>
+<a href="https://github.com/ersanyamarya/time-pocket"><img src ="https://img.shields.io/github/repo-size/ersanyamarya/time-pocket?logo=github&style=for-the-badge" alt="Repo Size Badge"></a>
+<a href="LICENSE"> <img src ="https://img.shields.io/github/license/ersanyamarya/time-pocket?style=for-the-badge" alt="LICENSE Badge"> </a>
+<a href="#"> <img alt="npm" src="https://img.shields.io/npm/v/time-pocket?logo=npm&style=for-the-badge"> </a>
 </p>
 
 Some simple time utilities which you can have with you while developing in JS.
