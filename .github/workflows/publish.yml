@@ -14,10 +14,11 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12.x
-      - run: npm install
-      - run: npm test
+      - name: prepare
+        run: |
+          npm install
+          npm test
       - name: publish on npmjs
-        uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
-          check-version: false
+        run: npm publish --access public
+        env:
+         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
