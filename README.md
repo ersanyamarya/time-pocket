@@ -81,8 +81,6 @@ console.log(hoursToMinSec(0.756, { milliseconds: true, txt: true }))
 */
 ```
 
-## </br>
-
 </br>
 
 <h2 align="center">
