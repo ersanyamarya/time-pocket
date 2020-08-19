@@ -84,7 +84,7 @@ console.log(hoursToMinSec(0.756, { milliseconds: true, txt: true }))
 </br>
 
 <h2 align="center">
-
+<a href="https://github.com/ersanyamarya">
 Author: <img src="https://raw.githubusercontent.com/ersanyamarya/time-pocket/master/docs/images/name-banner.svg" alt="Standard -  Time Pocket" height="20"></a>
 
 </h2>
