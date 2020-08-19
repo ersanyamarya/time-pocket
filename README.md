@@ -83,4 +83,4 @@ console.log(hoursToMinSec(0.756, { milliseconds: true, txt: true }))
 */
 ```
 
-<a href="https://github.com/ersanyamaryat">Author: <img src="docs/images/name-banner.svg" alt="Standard -  Time Pocket" width="150"></a>
+<a href="https://github.com/ersanyamarya">Author: <img src="docs/images/name-banner.svg" alt="Standard -  Time Pocket" width="150"></a>
