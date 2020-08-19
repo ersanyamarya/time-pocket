@@ -22,8 +22,8 @@ const dataToTest = [
       hours: 0,
       minutes: 45,
       seconds: 21,
+      txt: '45 min 21 sec 599 millisecond',
       milliseconds: 599,
-      txt: '45 min 21 sec',
     },
   },
   {

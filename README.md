@@ -1,6 +1,6 @@
 <h1 align="center">
 
-<a href="https://github.com/ersanyamarya/time-pocket"><img src="docs/images/time-pocket-2.svg" alt="Standard -  Time Pocket" width="200"></a> 
+<a href="https://github.com/ersanyamarya/time-pocket"><img src="https://raw.githubusercontent.com/ersanyamarya/time-pocket/master/docs/images/time-pocket-2.svg" alt="Standard -  Time Pocket" width="200"></a> 
 <br> Time Pocket - time utilities <br>
 
 </h1>
@@ -23,9 +23,9 @@ Some simple time utilities which you can have with you while developing in JS.
 
 `npm install time-pocket`
 
-### Convert decimal hours to min and seconds - `hoursToMinSec()`
-
 </br>
+
+### Convert decimal hours to min and seconds - `hoursToMinSec()`
 
 #### Arguments
 
@@ -33,8 +33,6 @@ Some simple time utilities which you can have with you while developing in JS.
 | ------ | ------------------- | --------------------- |
 | 0      | number              | Decimal time in hours |
 | 1      | [Options](#options) | Additional options    |
-
-</br>
 
 #### Options
 
@@ -77,10 +75,16 @@ console.log(hoursToMinSec(0.756, { milliseconds: true, txt: true }))
   hours: 0,
   minutes: 45,
   seconds: 21,
+  txt: '45 min 21 sec 599 millisecond',
   milliseconds: 599,
-  txt: '45 min 21 sec'
 }
 */
 ```
 
-<a href="https://github.com/ersanyamarya">Author: <img src="docs/images/name-banner.svg" alt="Standard -  Time Pocket" width="150"></a>
+</br>
+
+<h2 align="center">
+
+Author: <img src="https://raw.githubusercontent.com/ersanyamarya/time-pocket/master/docs/images/name-banner.svg" alt="Standard -  Time Pocket" height="20"></a>
+
+</h2>
