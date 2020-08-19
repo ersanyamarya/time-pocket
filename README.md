@@ -1,6 +1,7 @@
 <h1 align="center">
 
-<a href="https://standardjs.com"><img src="docs/images/time-pocket-2.svg" alt="Standard -  Time Pocket" width="200"></a> <br> Time Pocket - time utilities <br>
+<a href="https://github.com/ersanyamarya/time-pocket"><img src="docs/images/time-pocket-2.svg" alt="Standard -  Time Pocket" width="200"></a> 
+<br> Time Pocket - time utilities <br>
 
 </h1>
 
@@ -23,6 +24,26 @@ Some simple time utilities which you can have with you while developing in JS.
 `npm install time-pocket`
 
 ### Convert decimal hours to min and seconds - `hoursToMinSec()`
+
+</br>
+
+#### Arguments
+
+| Number | Type                | Description           |
+| ------ | ------------------- | --------------------- |
+| 0      | number              | Decimal time in hours |
+| 1      | [Options](#options) | Additional options    |
+
+</br>
+
+#### Options
+
+| Name         | Type    | Default | Description                          |
+| ------------ | ------- | ------- | ------------------------------------ |
+| milliseconds | boolean | false   | Also return the milliseconds         |
+| txt          | boolean | false   | Also return the value in text format |
+
+</br>
 
 #### Examples:
 
@@ -62,18 +83,4 @@ console.log(hoursToMinSec(0.756, { milliseconds: true, txt: true }))
 */
 ```
 
-#### Arguments
-
-| Number | Type                | Description           |
-| ------ | ------------------- | --------------------- |
-| 0      | number              | Decimal time in hours |
-| 1      | [Options](#options) | Additional options    |
-
-</br>
-
-#### Options
-
-| Name         | Type    | Default | Description                          |
-| ------------ | ------- | ------- | ------------------------------------ |
-| milliseconds | boolean | false   | Also return the milliseconds         |
-| txt          | boolean | false   | Also return the value in text format |
+<a href="https://github.com/ersanyamarya">Author: <img src="docs/images/name-banner.svg" alt="Standard -  Time Pocket" width="150"></a>
