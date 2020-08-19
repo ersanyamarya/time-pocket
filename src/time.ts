@@ -33,7 +33,7 @@ const hoursToMinSec = (
 
   if (options.milliseconds) {
     data.milliseconds = Math.floor((seconds % 1) * 1000)
-    data.txt = `${data.txt} ${data.milliseconds} milli`
+    if (data.milliseconds) data.txt = `${data.txt} ${data.milliseconds} millisecond`
   }
 
   return data
