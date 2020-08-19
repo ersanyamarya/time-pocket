@@ -1,5 +1,5 @@
 {
-  "name": "time-pocket",
+  "name": "@ersanyamarya/time-pocket",
   "version": "1.0.0",
   "description": "Simple time utilities",
   "main": "build/index.js",
