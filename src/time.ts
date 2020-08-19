@@ -25,14 +25,15 @@ const hoursToMinSec = (
     seconds: Math.floor(seconds),
   }
 
-  if (options.milliseconds) {
-    data.milliseconds = Math.floor((seconds % 1) * 1000)
-  }
-
   if (options.txt) {
     data.txt = hours
       ? `${data.hours} hour ${data.minutes} min ${data.seconds} sec`
       : `${data.minutes} min ${data.seconds} sec`
+  }
+
+  if (options.milliseconds) {
+    data.milliseconds = Math.floor((seconds % 1) * 1000)
+    data.txt = `${data.txt} ${data.milliseconds} milli`
   }
 
   return data

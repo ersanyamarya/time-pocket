@@ -5,6 +5,8 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
+    "clean": "rm -rf build out",
+    "clear": "npm run clean && rm -rf node_modules",
     "build": "tsc --project tsconfig.json",
     "develop": "nodemon --ext ts,json --watch src --exec node --inspect=0.0.0.0:9229 -r ts-node/register src/index.ts",
     "lint-fix": "eslint --ext ts --fix ./src",
