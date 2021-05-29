@@ -38,7 +38,7 @@ Some simple time utilities which you can have with you while developing in JS.
 
 ### Install
 
-`npm install time-pocket`
+`npm install time-pocket --save-dev`
 
 </br>
 
@@ -48,9 +48,9 @@ Returns day name if it is today, tomorrow or yesterday, otherwise returns the da
 
 #### Arguments
 
-| Number | Type | Description      |
-| ------ | ---- | ---------------- |
-| 0      | Date | Date to prettify |
+| Number | Type | Description          |
+| ------ | ---- | -------------------- |
+| 0      | Date | Date to get day from |
 
 #### Examples
 
@@ -121,10 +121,10 @@ Returns date in pretty format
 
 #### Arguments
 
-| Number | Type                | Description        |
-| ------ | ------------------- | ------------------ |
-| 0      | Date                | Date to prettify   |
-| 1      | [Options](#options) | Additional options |
+| Number | Type                | Description                |
+| ------ | ------------------- | -------------------------- |
+| 0      | Date                | Date to prettify time from |
+| 1      | [Options](#options) | Additional options         |
 
 #### Options
 
