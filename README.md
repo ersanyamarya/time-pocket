@@ -1,7 +1,6 @@
 <h1 align="center">
 
-<a href="https://github.com/ersanyamarya/time-pocket"><img src="https://raw.githubusercontent.com/ersanyamarya/time-pocket/master/docs/images/time-pocket-2.svg" alt="Standard -  Time Pocket" width="200"></a> 
-<br> Time Pocket - time utilities <br>
+<a href="https://github.com/ersanyamarya/time-pocket"><img src="https://raw.githubusercontent.com/ersanyamarya/time-pocket/master/docs/images/time-pocket-2.svg" alt="Standard -  Time Pocket" width="200"></a> <br> Time Pocket - time utilities <br>
 
 </h1>
 
@@ -17,6 +16,24 @@ Some simple time utilities which you can have with you while developing in JS.
 
 🌟 Types Included 🌟
 
+- [How to use](#how-to-use)
+  - [Install](#install)
+  - [`namedDay()`](#namedday)
+    - [Arguments](#arguments)
+    - [Examples](#examples)
+  - [`datePrettify()`](#dateprettify)
+    - [Arguments](#arguments-1)
+    - [Options](#options)
+    - [Examples](#examples-1)
+  - [`timePrettify()`](#timeprettify)
+    - [Arguments](#arguments-2)
+    - [Options](#options-1)
+    - [Examples](#examples-2)
+  - [`hoursToMinSec()`](#hourstominsec)
+    - [Arguments](#arguments-3)
+    - [Options](#options-2)
+    - [Examples](#examples-3)
+
 ## How to use
 
 ### Install
@@ -25,7 +42,112 @@ Some simple time utilities which you can have with you while developing in JS.
 
 </br>
 
-### Convert decimal hours to min and seconds - `hoursToMinSec()`
+### `namedDay()`
+
+Returns day name if it is today, tomorrow or yesterday, otherwise returns the day of the week.
+
+#### Arguments
+
+| Number | Type | Description      |
+| ------ | ---- | ---------------- |
+| 0      | Date | Date to prettify |
+
+#### Examples
+
+```ts
+import { datePrettify } from 'time-pocket'
+const today = new Date(Date.now())
+
+const yesterday = new Date(today)
+yesterday.setDate(yesterday.getDate() - 1)
+
+const tomorrow = new Date(today)
+tomorrow.setDate(tomorrow.getDate() + 1)
+
+const randomDate = new Date(today)
+randomDate.setDate(randomDate.getDate() + 12)
+
+console.log(namedDay(today))
+console.log(namedDay(tomorrow))
+console.log(namedDay(yesterday))
+console.log(namedDay(randomDate))
+
+/*
+Today
+Tomorrow
+Yesterday
+Thursday
+*/
+```
+
+### `datePrettify()`
+
+Returns date in pretty format
+
+#### Arguments
+
+| Number | Type                | Description        |
+| ------ | ------------------- | ------------------ |
+| 0      | Date                | Date to prettify   |
+| 1      | [Options](#options) | Additional options |
+
+#### Options
+
+| Name   | Type    | Default | Description                            |
+| ------ | ------- | ------- | -------------------------------------- |
+| pretty | boolean | true    | If you also want the prettified string |
+
+#### Examples
+
+```ts
+import { datePrettify } from 'time-pocket'
+const today = new Date(Date.now())
+
+console.log(datePrettify(today))
+/* 
+{
+  date: 29,
+  month: 'May',
+  year: 2021,
+  day: 'Saturday',
+  pretty: '29-May-2021, Saturday'
+}
+*/
+```
+
+### `timePrettify()`
+
+Returns date in pretty format
+
+#### Arguments
+
+| Number | Type                | Description        |
+| ------ | ------------------- | ------------------ |
+| 0      | Date                | Date to prettify   |
+| 1      | [Options](#options) | Additional options |
+
+#### Options
+
+| Name       | Type    | Default | Description                            |
+| ---------- | ------- | ------- | -------------------------------------- |
+| pretty     | boolean | true    | If you also want the prettified string |
+| twelveHour | boolean | false   | If you want the time in 12 hour format |
+
+#### Examples
+
+```ts
+import { timePrettify } from 'time-pocket'
+const today = new Date(Date.now())
+
+console.log(timePrettify(today))
+/* 
+{ hour: 19, min: 57, sec: 59, pretty: '19:57:59' }
+*/
+```
+
+### `hoursToMinSec()`
+
+Convert decimal hours to min and seconds
 
 #### Arguments
 
@@ -43,7 +165,7 @@ Some simple time utilities which you can have with you while developing in JS.
 
 </br>
 
-#### Examples:
+#### Examples
 
 ```ts
 import { hoursToMinSec } from 'time-pocket'

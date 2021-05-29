@@ -1,4 +1,4 @@
-import { hoursToMinSec } from './index'
+import { hoursToMinSec } from '../src/index'
 
 const dataToTest = [
   { arg0: 1.25, arg1: {}, expect: { hours: 1, minutes: 15, seconds: 0 } },
