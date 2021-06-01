@@ -24,6 +24,7 @@ Some simple time utilities which you can have with you while developing in JS.
   - [`datePrettify()`](#dateprettify)
     - [Arguments](#arguments-1)
     - [Options](#options)
+    - [Formats](#formats)
     - [Examples](#examples-1)
   - [`timePrettify()`](#timeprettify)
     - [Arguments](#arguments-2)
@@ -93,9 +94,22 @@ Returns date in pretty format
 
 #### Options
 
-| Name   | Type    | Default | Description                            |
-| ------ | ------- | ------- | -------------------------------------- |
-| pretty | boolean | true    | If you also want the prettified string |
+| Name   | Type    | Default     | Description                               |
+| ------ | ------- | ----------- | ----------------------------------------- |
+| pretty | boolean | true        | If you also want the prettified string    |
+| format | string  | DD-YY-MM DY | Format of the output of the pretty fromat |
+
+#### Formats
+
+| Name | Description | Example | Description      |
+| ---- | ----------- | ------- | ---------------- |
+| DD   | Date        | 19      | Date             |
+| MM   | Month       | January | Month in Letters |
+| mM   | Month (N)   | Jan     | Month short      |
+| mm   | Month (N)   | 01      | Month in Numbers |
+| YY   | Year        | 2021    | Year             |
+| DY   | Day         | Monday  | Day full         |
+| dy   | Day         | Mon     | Day short        |
 
 #### Examples
 
@@ -113,6 +127,18 @@ console.log(datePrettify(today))
   pretty: '29-May-2021, Saturday'
 }
 */
+
+console.log(datePrettify(today,{ pretty: true, format: 'DD mM MM mm YY DY dy' }))
+/*
+{
+  date: 29,
+  month: 'January',
+  year: 2021,
+  day: 'Friday',
+  pretty: '29 01 January Jan 2021 Friday Fri'
+}
+*/
+
 ```
 
 ### `timePrettify()`

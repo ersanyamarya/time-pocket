@@ -16,6 +16,17 @@ const dataToTestForPrettyDate = [
   },
   {
     arg0: today,
+    arg1: { pretty: true, format: 'DD MM YY' },
+    expect: {
+      date: 29,
+      month: 'May',
+      year: 2021,
+      day: 'Saturday',
+      pretty: '29 May 2021',
+    },
+  },
+  {
+    arg0: today,
     arg1: { pretty: false },
     expect: { date: 29, month: 'May', year: 2021, day: 'Saturday' },
   },
@@ -42,7 +53,7 @@ const dataToTestForPrettyTime = [
   {
     arg0: today,
     arg1: { pretty: true, twelveHour: true },
-    expect: { hour: 8, min: 21, sec: 32, pretty: '8:21:32 AM' },
+    expect: { hour: 8, min: 21, sec: 32, pretty: '8:21:32 PM' },
   },
 ]
 describe('Testing datePrettify functions', () => {
