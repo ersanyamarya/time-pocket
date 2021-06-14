@@ -36,7 +36,7 @@ interface IPrettyTime {
   time?: number
 }
 
-function datePrettify(inputDate: Date, options: IDatePrettify = { pretty: true }): IPrettyDate | string {
+function datePrettify(inputDate: Date, options: IDatePrettify = { pretty: true }): IPrettyDate {
   try {
     const data: IPrettyDate = {
       date: inputDate.getDate(),
@@ -71,10 +71,8 @@ const getMonthNumber = (inputDate: Date): string => {
   const month = inputDate.getMonth() + 1
   return month < 10 ? `0${month}` : `${month}`
 }
-function timePrettify(
-  inputDate: Date,
-  options: ITimePrettify = { pretty: true, twelveHour: false }
-): IPrettyTime | string {
+
+function timePrettify(inputDate: Date, options: ITimePrettify = { pretty: true, twelveHour: false }): IPrettyTime {
   try {
     const data: IPrettyTime = {
       hour: options.twelveHour

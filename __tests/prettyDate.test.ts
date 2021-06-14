@@ -27,6 +27,17 @@ const dataToTestForPrettyDate = [
   },
   {
     arg0: today,
+    arg1: { pretty: true, format: 'DD mM YY' },
+    expect: {
+      date: 29,
+      month: 'May',
+      year: 2021,
+      day: 'Saturday',
+      pretty: '29 05 2021',
+    },
+  },
+  {
+    arg0: today,
     arg1: { pretty: false },
     expect: { date: 29, month: 'May', year: 2021, day: 'Saturday' },
   },
