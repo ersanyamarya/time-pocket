@@ -34,6 +34,9 @@ Some simple time utilities which you can have with you while developing in JS.
     - [Arguments](#arguments-3)
     - [Options](#options-2)
     - [Examples](#examples-3)
+  - [`timeDifference()`](#timedifference)
+    - [Arguments](#arguments-4)
+    - [Examples](#examples-4)
 
 ## How to use
 
@@ -227,6 +230,38 @@ console.log(hoursToMinSec(0.756, { milliseconds: true, txt: true }))
   milliseconds: 599,
 }
 */
+```
+
+
+### `timeDifference()`
+
+Convert decimal hours to min and seconds
+
+#### Arguments
+
+| Number | Type            | Description                               |
+| ------ | --------------- | ----------------------------------------- |
+| 0      | `string | Date` | Start date                                |
+| 1      | `string | Date` | End date                                  |
+| 2      | Boolean         | If you want to seconds in the text output |
+
+
+</br>
+
+#### Examples
+
+```ts
+import { timeDifference } from 'time-pocket'
+
+const today = new Date(Date.now())
+
+const endDate = new Date(today)
+
+endDate.setMinutes(endDate.getMinutes() + 5)
+
+console.log(timeDifference(endDate, String(today)));
+// { hours: 0, minutes: 5, seconds: 0, txt: '5 min 0 sec' }
+
 ```
 
 </br>

@@ -1,4 +1,4 @@
-import { hoursToMinSec } from './time'
+import { hoursToMinSec, timeDifference } from './time'
 import { datePrettify, timePrettify } from './prettyDate'
 import { namedDay } from './namedDay'
-export { hoursToMinSec, datePrettify, timePrettify, namedDay }
+export { hoursToMinSec, timeDifference, datePrettify, timePrettify, namedDay }
