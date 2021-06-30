@@ -29,12 +29,7 @@ const hoursToMinSec = (
     data.txt = hours
       ? `${data.hours} hour ${data.minutes} min ${data.seconds} sec`
       : `${data.minutes} min ${data.seconds} sec`
-
-
-
-
   }
-
 
   if (options.milliseconds) {
     data.milliseconds = Math.floor((seconds % 1) * 1000)
@@ -45,9 +40,8 @@ const hoursToMinSec = (
 }
 
 const timeDifference = (startDate: string | Date, endDate: string | Date, seconds = false): HoursToMinSecResponse => {
-
-  const start: number = (typeof startDate === 'string') ? Date.parse(startDate) : startDate.getTime()
-  const end: number = (typeof endDate === 'string') ? Date.parse(endDate) : endDate.getTime()
+  const start: number = typeof startDate === 'string' ? Date.parse(startDate) : startDate.getTime()
+  const end: number = typeof endDate === 'string' ? Date.parse(endDate) : endDate.getTime()
   const data = hoursToMinSec((start - end) / (1000 * 60 * 60), { txt: true })
   if (!seconds) data.txt = `${data.txt.split('min')[0]}min`
   return data

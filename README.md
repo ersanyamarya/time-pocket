@@ -131,7 +131,7 @@ console.log(datePrettify(today))
 }
 */
 
-console.log(datePrettify(today,{ pretty: true, format: 'DD mM MM mm YY DY dy' }))
+console.log(datePrettify(today, { pretty: true, format: 'DD mM MM mm YY DY dy' }))
 /*
 {
   date: 29,
@@ -141,7 +141,6 @@ console.log(datePrettify(today,{ pretty: true, format: 'DD mM MM mm YY DY dy' })
   pretty: '29 01 January Jan 2021 Friday Fri'
 }
 */
-
 ```
 
 ### `timePrettify()`
@@ -232,19 +231,17 @@ console.log(hoursToMinSec(0.756, { milliseconds: true, txt: true }))
 */
 ```
 
-
 ### `timeDifference()`
 
 Convert decimal hours to min and seconds
 
 #### Arguments
 
-| Number | Type            | Description                               |
-| ------ | --------------- | ----------------------------------------- |
-| 0      | `string | Date` | Start date                                |
-| 1      | `string | Date` | End date                                  |
-| 2      | Boolean         | If you want to seconds in the text output |
-
+| Number | Type    | Description                               |
+| ------ | ------- | ----------------------------------------- | ---------- |
+| 0      | `string | Date`                                     | Start date |
+| 1      | `string | Date`                                     | End date   |
+| 2      | Boolean | If you want to seconds in the text output |
 
 </br>
 
@@ -259,9 +256,8 @@ const endDate = new Date(today)
 
 endDate.setMinutes(endDate.getMinutes() + 5)
 
-console.log(timeDifference(endDate, String(today)));
+console.log(timeDifference(endDate, String(today)))
 // { hours: 0, minutes: 5, seconds: 0, txt: '5 min 0 sec' }
-
 ```
 
 </br>
