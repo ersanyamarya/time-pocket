@@ -1,7 +1,6 @@
 import { datePrettify, timePrettify } from '../src/prettyDate'
 
-const today = new Date('2021-05-29T14:51:32.776Z')
-
+const today = new Date('2021-05-29T12:51:32.776Z')
 const dataToTestForPrettyDate = [
   {
     arg0: today,
@@ -54,20 +53,20 @@ const dataToTestForPrettyTime = [
   {
     arg0: today,
     arg1: { pretty: false },
-    expect: { hour: 20, min: 21, sec: 32 },
+    expect: { hour: 14, min: 51, sec: 32 },
   },
   {
     arg0: today,
     arg1: { pretty: true },
-    expect: { hour: 20, min: 21, sec: 32, pretty: '20:21:32' },
+    expect: { hour: 14, min: 51, sec: 32, pretty: '14:51:32' },
   },
   {
     arg0: today,
     arg1: { pretty: true, twelveHour: true },
-    expect: { hour: 8, min: 21, sec: 32, pretty: '8:21:32 PM' },
+    expect: { hour: 2, min: 51, sec: 32, pretty: '2:51:32 PM' },
   },
 ]
-describe('Testing datePrettify functions', () => {
+describe('Testing timePrettify functions', () => {
   dataToTestForPrettyTime.forEach(data => {
     test(`it should return prettified ${data.arg0}`, () => {
       expect(timePrettify(data.arg0, data.arg1)).toStrictEqual(data.expect)

@@ -10,8 +10,8 @@
     "refresh": "npm run clear && npm install",
     "build": "tsc --project tsconfig.json",
     "develop": "nodemon --ext ts,json --watch src --exec node --inspect=0.0.0.0:9229 -r ts-node/register src/index.ts",
-    "lint-fix": "eslint --ext ts --fix ./src",
-    "lint": "eslint --ext ts ./src",
+    "lint-fix": "eslint --ext ts --fix ./src ./__tests",
+    "lint": "eslint --ext ts ./src ./__tests",
     "format": "prettier --write \"**/*.{ts,ts,json,md}\"",
     "test": "NODE_ENV=test jest --config=./jest.config.js --runInBand --no-cache",
     "prepublish": "npm run build"
