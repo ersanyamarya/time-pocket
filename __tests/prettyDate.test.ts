@@ -53,12 +53,12 @@ const dataToTestForPrettyTime = [
   {
     arg0: today,
     arg1: { pretty: false },
-    expect: { hour: 12, min: 51, sec: 32 },
+    expect: { hour: 14, min: 51, sec: 32 },
   },
   {
     arg0: today,
     arg1: { pretty: true },
-    expect: { hour: 12, min: 51, sec: 32, pretty: '12:51:32' },
+    expect: { hour: 14, min: 51, sec: 32, pretty: '14:51:32' },
   },
   {
     arg0: today,

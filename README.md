@@ -237,11 +237,11 @@ Convert decimal hours to min and seconds
 
 #### Arguments
 
-| Number | Type            | Description                               |
-| ------ | --------------- | ----------------------------------------- |
-| 0      | `string | Date` | Start date                                |
-| 1      | `string | Date` | End date                                  |
-| 2      | Boolean         | If you want to seconds in the text output |
+| Number | Type    | Description                               |
+| ------ | ------- | ----------------------------------------- | ---------- |
+| 0      | `string | Date`                                     | Start date |
+| 1      | `string | Date`                                     | End date   |
+| 2      | Boolean | If you want to seconds in the text output |
 
 </br>
 

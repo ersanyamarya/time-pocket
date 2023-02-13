@@ -9,7 +9,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  extends: ['standard', 'prettier', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
+  extends: ['standard', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
   plugins: ['prettier'],
   rules: {
     'prettier/prettier': 'error',
